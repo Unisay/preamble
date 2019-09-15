@@ -2,7 +2,7 @@ module Fixture.Employee where
 
 import Fixture.Address
 import Fixture.Salary
-import Preamble
+import Protolude.GL
 
 data Employee =
   Employee

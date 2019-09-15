@@ -1,7 +1,7 @@
 module Spec where
 
 import Fixture
-import Preamble
+import Protolude.GL
 import Text.Pretty.Simple (pPrint)
 
 main :: IO ()

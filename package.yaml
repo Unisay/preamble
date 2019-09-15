@@ -1,10 +1,10 @@
-name: preamble
+name: protolude-gl
 version: 0.1.0.0
 category: prelude
 author: Yuriy Lazarev
 maintainer: unisay@users.noreply.github.com
 copyright: Yuriy Lazarev
-github: unisay/preamble
+github: unisay/protolude-gl
 extra-source-files:
   - README.md
 ghc-options:
@@ -30,7 +30,7 @@ dependencies:
 library:
   source-dirs: src
   exposed-modules:
-    - Preamble
+    - Protolude.GL
   dependencies:
     - protolude
     - generic-lens
@@ -40,7 +40,7 @@ tests:
     source-dirs:
       - test
     dependencies:
-      - preamble
+      - protolude-gl
       - pretty-simple
       - text
     ghc-options:

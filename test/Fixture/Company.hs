@@ -1,6 +1,6 @@
 module Fixture.Company where
 
-import Preamble
+import Protolude.GL
 import Fixture.Address
 import Fixture.Employee
 

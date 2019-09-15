@@ -1,6 +1,6 @@
 module Fixture.Salary where
 
-import Preamble
+import Protolude.GL
 
 data Salary = Huuge | Small
   deriving (Generic, Eq, Show)

@@ -1,6 +1,6 @@
 module Fixture.Address where
 
-import Preamble
+import Protolude.GL
 
 data Address =
   Address

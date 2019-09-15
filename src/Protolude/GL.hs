@@ -1,8 +1,8 @@
 {-|
-Module      : Preamble
+Module      : Protolude.GL
 Description : Protolude + Generic Lens + Overloaded Labels
 -}
-module Preamble
+module Protolude.GL
   ( module Protolude
   , module Data.Generics.Product
   , module Data.Generics.Sum
