@@ -1,0 +1,48 @@
+name: preamble
+version: 0.1.0.0
+category: prelude
+author: Yuriy Lazarev
+maintainer: unisay@users.noreply.github.com
+copyright: Yuriy Lazarev
+github: unisay/preamble
+extra-source-files:
+  - README.md
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wredundant-constraints
+  - -Wimplicit-prelude
+  - -Wtabs
+  - -Wmissing-local-signatures
+  - -fhelpful-errors
+default-extensions:
+  - DeriveGeneric
+  - DuplicateRecordFields
+  - NoImplicitPrelude
+  - OverloadedLabels
+  - OverloadedStrings
+  - TypeApplications
+dependencies:
+  - base
+  - protolude
+library:
+  source-dirs: src
+  exposed-modules:
+    - Preamble
+  dependencies:
+    - protolude
+    - generic-lens
+tests:
+  spec:
+    main: Spec
+    source-dirs:
+      - test
+    dependencies:
+      - preamble
+      - pretty-simple
+      - text
+    ghc-options:
+      - -threaded
+      - -Wno-missing-local-signatures
